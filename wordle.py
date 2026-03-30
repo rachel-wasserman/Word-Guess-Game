@@ -86,7 +86,7 @@ def updateKeyStatus(keyStatus, guess, wordle):
                 keyStatus[char] = 'X'
 
 chosenWord = pickRandom()
-print(chosenWord)
+#print(chosenWord)
 print(">>> Welcome to Word Guess Game!")
 
 letterBoard = []
@@ -162,6 +162,11 @@ while tries < 6 and win == False:
         print()
         printAlphabet(keyStatus)
         tries += 1
+
+
+if win:
+    print()
+    print("You won!")
 
 if not win:
     print()
